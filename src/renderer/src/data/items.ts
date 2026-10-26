@@ -250,12 +250,38 @@ export const ITEMS = [
   },
   {
     category: 'Attachments',
+    id: 'HP-DA_Magazine',
+    displayName: 'HP-DA Magazine',
+    resourcePath: 'res://Items/Weapons/HP-DA/HP-DA_Magazine.tres',
+    nameInventory: 'Mag.',
+    iconFile: 'Icon_HP-DA_Magazine.png-db0ba19c51da8a37d9ed6d432c5a6ea2.s3tc.ctex',
+    showAmount: true,
+    defaultAmount: 14,
+    maxAmount: 14,
+    compatible: ['res://Items/Ammo/Ammo_9x19/Ammo_9x19.tres']
+  },
+  {
+    category: 'Attachments',
     id: 'Hybrid',
     displayName: 'Hybrid',
     resourcePath: 'res://Items/Attachments/Hybrid/Hybrid.tres',
     sizeW: 2,
     sizeH: 1,
     iconFile: 'Icon_Hybrid.png-ad6375110827366999c1035ac86c2ada.s3tc.ctex'
+  },
+  {
+    category: 'Attachments',
+    id: 'Jatimatic_Magazine',
+    displayName: 'Jatimatic Magazine',
+    resourcePath: 'res://Items/Weapons/Jatimatic/Jatimatic_Magazine.tres',
+    nameInventory: 'Mag.',
+    sizeW: 1,
+    sizeH: 2,
+    iconFile: 'Icon_Jatimatic_Magazine.png-6c5a39f221caae565013d3a1d83d2792.s3tc.ctex',
+    showAmount: true,
+    defaultAmount: 20,
+    maxAmount: 20,
+    compatible: ['res://Items/Ammo/Ammo_9x19/Ammo_9x19.tres']
   },
   {
     category: 'Attachments',
@@ -690,6 +716,17 @@ export const ITEMS = [
   },
   {
     category: 'Backpacks',
+    id: 'Backpack_Kantamus',
+    displayName: 'Kantamus Backpack',
+    resourcePath: 'res://Items/Backpacks/Backpack_Kantamus/Backpack_Kantamus.tres',
+    nameInventory: 'Kantamus',
+    sizeW: 4,
+    sizeH: 5,
+    iconFile: 'Icon_Backpack_Kantamus.png-1467d70a00893a32c216d1e0cd047316.s3tc.ctex',
+    slots: ['Backpack']
+  },
+  {
+    category: 'Backpacks',
     id: 'Backpack_Nomad',
     displayName: 'Nomad Backpack',
     resourcePath: 'res://Items/Backpacks/Backpack_Nomad/Backpack_Nomad.tres',
@@ -814,6 +851,16 @@ export const ITEMS = [
     sizeW: 2,
     sizeH: 2,
     iconFile: 'Icon_Beanie_Flame.png-3a780dc85a8e5a0e547505f43465de5b.s3tc.ctex',
+    slots: ['Head']
+  },
+  {
+    category: 'Clothing',
+    id: 'Hat_Foil',
+    displayName: 'Foil Hat',
+    resourcePath: 'res://Items/Clothing/Hat_Foil/Hat_Foil.tres',
+    sizeW: 2,
+    sizeH: 2,
+    iconFile: 'Icon_Hat_Foil.png-764a27422ce43e98c179e93914a53f32.s3tc.ctex',
     slots: ['Head']
   },
   {
@@ -1012,6 +1059,14 @@ export const ITEMS = [
   },
   {
     category: 'Consumables',
+    id: 'Can_Empty',
+    displayName: 'Can (Empty)',
+    resourcePath: 'res://Items/Consumables/Can_Empty/Can_Empty.tres',
+    nameInventory: 'Can',
+    iconFile: 'Icon_Can_Empty.png-8cd81596f96666c07c2c13348a6c1052.s3tc.ctex'
+  },
+  {
+    category: 'Consumables',
     id: 'Canned_Meat',
     displayName: 'Canned Meat',
     resourcePath: 'res://Items/Consumables/Canned_Meat/Canned_Meat.tres',
@@ -1135,14 +1190,6 @@ export const ITEMS = [
   },
   {
     category: 'Consumables',
-    id: 'Can_Empty',
-    displayName: 'Empty Can',
-    resourcePath: 'res://Items/Consumables/Can_Empty/Can_Empty.tres',
-    nameInventory: 'Can',
-    iconFile: 'Icon_Can_Empty.png-8cd81596f96666c07c2c13348a6c1052.s3tc.ctex'
-  },
-  {
-    category: 'Consumables',
     id: 'Energy_Drink',
     displayName: 'Energy Drink',
     resourcePath: 'res://Items/Consumables/Energy_Drink/Energy_Drink.tres',
@@ -1177,6 +1224,13 @@ export const ITEMS = [
     sizeW: 2,
     sizeH: 2,
     iconFile: 'Icon_Cooked_Fish_Soup.png-cf781cc608462224dcd259c925305b05.s3tc.ctex'
+  },
+  {
+    category: 'Consumables',
+    id: 'Jam',
+    displayName: 'Jam',
+    resourcePath: 'res://Items/Consumables/Jam/Jam.tres',
+    iconFile: 'Icon_Jam.png-5cfdf53becdff41837b344e6a8ff59cb.s3tc.ctex'
   },
   {
     category: 'Consumables',
@@ -1280,6 +1334,14 @@ export const ITEMS = [
   },
   {
     category: 'Consumables',
+    id: 'Soda_Empty',
+    displayName: 'Soda (Empty)',
+    resourcePath: 'res://Items/Consumables/Soda_Empty/Soda_Empty.tres',
+    nameInventory: 'Can',
+    iconFile: 'Icon_Soda_Empty.png-a7ad68ebda66c621a2e818f9befdc580.s3tc.ctex'
+  },
+  {
+    category: 'Consumables',
     id: 'Soda_Lemon',
     displayName: 'Soda (Lemon)',
     resourcePath: 'res://Items/Consumables/Soda_Lemon/Soda_Lemon.tres',
@@ -1338,6 +1400,14 @@ export const ITEMS = [
     nameInventory: 'A. Clock',
     iconFile: 'Icon_Alarm_Clock.png-efdaf46146cc6d1bdb0c79cd8d942d56.s3tc.ctex',
     slots: ['Time']
+  },
+  {
+    category: 'Electronics',
+    id: 'Alcometer',
+    displayName: 'Alcometer',
+    resourcePath: 'res://Items/Electronics/Alcometer/Alcometer.tres',
+    nameInventory: 'A. Meter',
+    iconFile: 'Icon_Alcometer.png-3c9d738eaf09b752a95cf8e47de8e0ff.s3tc.ctex'
   },
   {
     category: 'Electronics',
@@ -1483,6 +1553,24 @@ export const ITEMS = [
     compatible: ['res://Items/Electronics/Batteries/Batteries.tres']
   },
   {
+    category: 'Electronics',
+    id: 'Watch_Tactical',
+    displayName: 'Tactical Watch',
+    resourcePath: 'res://Items/Electronics/Watch_Tactical/Watch_Tactical.tres',
+    nameInventory: 'T. Watch',
+    iconFile: 'Icon_Watch_Tactical.png-40fb47540b38c6e408cf359ca3364798.s3tc.ctex',
+    slots: ['Time']
+  },
+  {
+    category: 'Electronics',
+    id: 'VIRVE',
+    displayName: 'VIRVE',
+    resourcePath: 'res://Items/Electronics/VIRVE/VIRVE.tres',
+    sizeW: 1,
+    sizeH: 2,
+    iconFile: 'Icon_VIRVE.png-1f245fd0b984be34cf9bae6b262435fb.s3tc.ctex'
+  },
+  {
     category: 'Fishing',
     id: 'Bream',
     displayName: 'Bream',
@@ -1544,6 +1632,15 @@ export const ITEMS = [
     sizeW: 7,
     sizeH: 2,
     iconFile: 'Icon_Bed_Nomad.png-5cb9a18123f8fc25cb1925cf9323a6e4.s3tc.ctex'
+  },
+  {
+    category: 'Furniture',
+    id: 'Bench_Campsite_F',
+    displayName: 'Bench (Campsite)',
+    resourcePath: 'res://Assets/Bench_Campsite/Bench_Campsite_F.tres',
+    sizeW: 8,
+    sizeH: 2,
+    iconFile: 'Icon_Bench_Campsite.png-7e2dc9bd19c2de967d2b8e6d00c90242.s3tc.ctex'
   },
   {
     category: 'Furniture',
@@ -2036,6 +2133,14 @@ export const ITEMS = [
   },
   {
     category: 'Keys',
+    id: 'Key_Garage',
+    displayName: 'Garage Key',
+    resourcePath: 'res://Items/Keys/Key_Garage.tres',
+    nameInventory: 'Gar. K.',
+    iconFile: 'Icon_Key_Garage.png-36801c43bce73b6cac624e9b11c93c66.s3tc.ctex'
+  },
+  {
+    category: 'Keys',
     id: 'Key_Gymnasium',
     displayName: 'Gymnasium Key',
     resourcePath: 'res://Items/Keys/Key_Gymnasium.tres',
@@ -2296,6 +2401,17 @@ export const ITEMS = [
     displayName: 'Wipes',
     resourcePath: 'res://Items/Medical/Wipes/Wipes.tres',
     iconFile: 'Icon_Wipes.png-d32ae7cc1b2fddda9be5673cb02d6d69.s3tc.ctex'
+  },
+  {
+    category: 'Misc',
+    id: 'Aluminum_Foil',
+    displayName: 'Aluminum Foil',
+    resourcePath: 'res://Items/Misc/Aluminum_Foil/Aluminum_Foil.tres',
+    nameRotated: 'A. Foil',
+    nameEquipment: 'A. Foil',
+    sizeW: 3,
+    sizeH: 1,
+    iconFile: 'Icon_Aluminum_Foil.png-d4e0808f33ac9cd49a3b9b8216fef542.s3tc.ctex'
   },
   {
     category: 'Misc',
@@ -2610,6 +2726,32 @@ export const ITEMS = [
   },
   {
     category: 'Weapons',
+    id: 'HP-DA',
+    displayName: 'HP-DA',
+    resourcePath: 'res://Items/Weapons/HP-DA/HP-DA.tres',
+    sizeW: 3,
+    sizeH: 2,
+    iconFile: 'Icon_HP-DA.png-e5019aeb185f8fbdd2ef564ac07f46ab.s3tc.ctex',
+    showCondition: true,
+    repairs: true,
+    slots: ['Primary', 'Secondary'],
+    compatible: ['res://Items/Weapons/HP-DA/HP-DA_Magazine.tres', 'res://Items/Attachments/Rider/Rider.tres', 'res://Items/Attachments/RMR/RMR.tres', 'res://Items/Attachments/SRO/SRO.tres']
+  },
+  {
+    category: 'Weapons',
+    id: 'Jatimatic',
+    displayName: 'Jatimatic',
+    resourcePath: 'res://Items/Weapons/Jatimatic/Jatimatic.tres',
+    sizeW: 4,
+    sizeH: 2,
+    iconFile: 'Icon_Jatimatic.png-e26cd8f9bb0af4eecc781d3b9f4e1e34.s3tc.ctex',
+    showCondition: true,
+    repairs: true,
+    slots: ['Primary', 'Secondary'],
+    compatible: ['res://Items/Weapons/Jatimatic/Jatimatic_Magazine.tres']
+  },
+  {
+    category: 'Weapons',
     id: 'HK416',
     displayName: 'K416',
     resourcePath: 'res://Items/Weapons/HK416/HK416.tres',
@@ -2724,6 +2866,34 @@ export const ITEMS = [
     repairs: true,
     slots: ['Primary', 'Secondary'],
     compatible: ['res://Items/Weapons/KP-31/KP-31_Drum.tres']
+  },
+  {
+    category: 'Weapons',
+    id: 'M28',
+    displayName: 'M28',
+    resourcePath: 'res://Items/Weapons/M28/M28.tres',
+    sizeW: 7,
+    sizeH: 2,
+    iconFile: 'Icon_M28.png-e37738799db7dd3388cf4f6d018b7ba6.s3tc.ctex',
+    showCondition: true,
+    maxAmount: 5,
+    repairs: true,
+    slots: ['Primary'],
+    compatible: ['res://Items/Attachments/PU/PU.tres']
+  },
+  {
+    category: 'Weapons',
+    id: 'M28_MOD',
+    displayName: 'M28 (MOD)',
+    resourcePath: 'res://Items/Weapons/M28/M28_MOD.tres',
+    sizeW: 7,
+    sizeH: 2,
+    iconFile: 'Icon_M28_MOD.png-10786d3dfda66d8b4ce1cb950731971c.s3tc.ctex',
+    showCondition: true,
+    maxAmount: 5,
+    repairs: true,
+    slots: ['Primary'],
+    compatible: ['res://Items/Attachments/ACOG/ACOG.tres', 'res://Items/Attachments/EXPS/EXPS.tres', 'res://Items/Attachments/HMR/HMR.tres', 'res://Items/Attachments/Kobra/Kobra.tres', 'res://Items/Attachments/Leopard/Leopard.tres', 'res://Items/Attachments/Micro/Micro.tres', 'res://Items/Attachments/MRO/MRO.tres', 'res://Items/Attachments/PRO/PRO.tres', 'res://Items/Attachments/PU/PU.tres', 'res://Items/Attachments/Vudu/Vudu.tres']
   },
   {
     category: 'Weapons',
