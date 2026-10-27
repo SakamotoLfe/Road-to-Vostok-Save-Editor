@@ -832,6 +832,16 @@ export const ITEMS = [
     iconFile: 'Icon_Book_Religion.png-dc6102f614d7689809c4f49e0f0bb196.s3tc.ctex'
   },
   {
+    category: 'Books',
+    id: 'Magazine_Crosswords',
+    displayName: 'Magazine (Crosswords)',
+    resourcePath: 'res://Items/Books/Magazine_Crosswords.tres',
+    nameInventory: 'Crosswords',
+    sizeW: 2,
+    sizeH: 2,
+    iconFile: 'Icon_Magazine_Crosswords.png-e433d5327232eec8fd40d302b0b8ae7d.s3tc.ctex'
+  },
+  {
     category: 'Clothing',
     id: 'Boots_Combat',
     displayName: 'Combat Boots',
@@ -1532,6 +1542,27 @@ export const ITEMS = [
   },
   {
     category: 'Electronics',
+    id: 'Oscilloscope',
+    displayName: 'Oscilloscope',
+    resourcePath: 'res://Items/Electronics/Oscilloscope/Oscilloscope.tres',
+    sizeW: 3,
+    sizeH: 2,
+    iconFile: 'Icon_Oscilloscope.png-07b2dd423cf3ff6ff148e8ab74e89847.s3tc.ctex'
+  },
+  {
+    category: 'Electronics',
+    id: 'Phoenix',
+    displayName: 'Phoenix',
+    resourcePath: 'res://Items/Electronics/Phoenix/Phoenix.tres',
+    sizeW: 1,
+    sizeH: 2,
+    iconFile: 'Icon_Phoenix.png-a9ae7d16a45bb6b11e63a03062706db8.s3tc.ctex',
+    showCondition: true,
+    slots: ['Light'],
+    compatible: ['res://Items/Electronics/Batteries/Batteries.tres']
+  },
+  {
+    category: 'Electronics',
     id: 'Polaris',
     displayName: 'Polaris',
     resourcePath: 'res://Items/Electronics/Polaris/Polaris.tres',
@@ -1644,6 +1675,15 @@ export const ITEMS = [
   },
   {
     category: 'Furniture',
+    id: 'Bookshelf_F',
+    displayName: 'Bookshelf',
+    resourcePath: 'res://Assets/Bookshelf/Bookshelf_F.tres',
+    sizeW: 8,
+    sizeH: 6,
+    iconFile: 'Icon_Bookshelf.png-4f81b06d0ed0abafb4f0f26f36e61711.s3tc.ctex'
+  },
+  {
+    category: 'Furniture',
     id: 'Cabinet_Medical_F',
     displayName: 'Cabinet (Medical)',
     resourcePath: 'res://Assets/Cabinet_Medical/Cabinet_Medical_F.tres',
@@ -1671,6 +1711,15 @@ export const ITEMS = [
     sizeH: 3,
     iconFile: 'Icon_Cabinet_Wood.png-e198ea9655ca2f8f6b5a9f8cf95612b8.s3tc.ctex',
     containerSize: { w: 6, h: 8 }
+  },
+  {
+    category: 'Furniture',
+    id: 'Calendar_F',
+    displayName: 'Calendar',
+    resourcePath: 'res://Assets/Calendar/Calendar_F.tres',
+    sizeW: 1,
+    sizeH: 2,
+    iconFile: 'Icon_Calendar.png-eca6d8073ee65248ae5f00a8221ba449.s3tc.ctex'
   },
   {
     category: 'Furniture',
@@ -1844,6 +1893,15 @@ export const ITEMS = [
     sizeW: 2,
     sizeH: 1,
     iconFile: 'Icon_Rack_Coat.png-f6c264639fc95894f0eb4ed9836bf81d.s3tc.ctex'
+  },
+  {
+    category: 'Furniture',
+    id: 'Radio_F',
+    displayName: 'Radio',
+    resourcePath: 'res://Assets/Radio/Radio_F.tres',
+    sizeW: 2,
+    sizeH: 1,
+    iconFile: 'Icon_Radio.png-8309fd78f2d24f029a88b97919ae3666.s3tc.ctex'
   },
   {
     category: 'Furniture',
@@ -2218,6 +2276,15 @@ export const ITEMS = [
     iconFile: 'Icon_Patient_Report.png-f0d89eb8ce7d184d50c65f176b2bf768.s3tc.ctex'
   },
   {
+    category: 'Lore',
+    id: 'Suitcase_Driver',
+    displayName: 'Suitcase (Driver)',
+    resourcePath: 'res://Items/Lore/Suitcase_Driver/Suitcase_Driver.tres',
+    sizeW: 5,
+    sizeH: 2,
+    iconFile: 'Icon_Suitcase_Driver.png-c68a83626f2ad0e3ef76d9c0be3eee0d.s3tc.ctex'
+  },
+  {
     category: 'Medical',
     id: 'AFAK',
     displayName: 'AFAK',
@@ -2288,6 +2355,14 @@ export const ITEMS = [
     displayName: 'Gum',
     resourcePath: 'res://Items/Medical/Gum/Gum.tres',
     iconFile: 'Icon_Gum.png-c5a6c888f7f51bdf657701d44c183e9f.s3tc.ctex'
+  },
+  {
+    category: 'Medical',
+    id: 'Hand_Warmer',
+    displayName: 'Hand Warmer',
+    resourcePath: 'res://Items/Medical/Hand_Warmer/Hand_Warmer.tres',
+    nameInventory: 'Hand W.',
+    iconFile: 'Icon_Hand_Warmer.png-31f39998dc767d6c4e06d0f0f7834c2d.s3tc.ctex'
   },
   {
     category: 'Medical',
@@ -2404,6 +2479,14 @@ export const ITEMS = [
   },
   {
     category: 'Misc',
+    id: 'Air_Freshener',
+    displayName: 'Air Freshener',
+    resourcePath: 'res://Items/Misc/Air_Freshener/Air_Freshener.tres',
+    nameInventory: 'A. Fresh',
+    iconFile: 'Icon_Air_Freshener.png-b99ca0afa11054e4ac08a8022add2bc0.s3tc.ctex'
+  },
+  {
+    category: 'Misc',
     id: 'Aluminum_Foil',
     displayName: 'Aluminum Foil',
     resourcePath: 'res://Items/Misc/Aluminum_Foil/Aluminum_Foil.tres',
@@ -2459,6 +2542,22 @@ export const ITEMS = [
   },
   {
     category: 'Misc',
+    id: 'Radiator_Engine',
+    displayName: 'Engine Radiator',
+    resourcePath: 'res://Items/Misc/Radiator_Engine/Radiator_Engine.tres',
+    sizeW: 5,
+    sizeH: 3,
+    iconFile: 'Icon_Radiator_Engine.png-117b95f7483e229911ee6771c3caddb9.s3tc.ctex'
+  },
+  {
+    category: 'Misc',
+    id: 'Glue',
+    displayName: 'Glue',
+    resourcePath: 'res://Items/Misc/Glue/Glue.tres',
+    iconFile: 'Icon_Glue.png-98bc743fa092ff5f38b8ca47aa3648ec.s3tc.ctex'
+  },
+  {
+    category: 'Misc',
     id: 'Happy_Stove',
     displayName: 'Happy Stove',
     resourcePath: 'res://Items/Misc/Happy_Stove/Happy_Stove.tres',
@@ -2475,6 +2574,15 @@ export const ITEMS = [
     sizeH: 3,
     iconFile: 'Icon_Jerry_Can.png-f7c07b9deb4b27ae92071eeb7d88190e.s3tc.ctex',
     showCondition: true
+  },
+  {
+    category: 'Misc',
+    id: 'Leather',
+    displayName: 'Leather',
+    resourcePath: 'res://Items/Misc/Leather/Leather.tres',
+    sizeW: 1,
+    sizeH: 2,
+    iconFile: 'Icon_Leather.png-5a8d8f90053a429a333f60785c262fcb.s3tc.ctex'
   },
   {
     category: 'Misc',
@@ -2539,6 +2647,17 @@ export const ITEMS = [
   },
   {
     category: 'Misc',
+    id: 'Museum_Plate',
+    displayName: 'Museum Plate',
+    resourcePath: 'res://Items/Misc/Museum_Plate/Museum_Plate.tres',
+    nameRotated: 'M. Plate',
+    nameEquipment: 'M. Plate',
+    sizeW: 3,
+    sizeH: 1,
+    iconFile: 'Icon_Museum_Plate.png-e401959216153f57d7b89928f0d22144.s3tc.ctex'
+  },
+  {
+    category: 'Misc',
     id: 'Nails',
     displayName: 'Nails',
     resourcePath: 'res://Items/Misc/Nails/Nails.tres',
@@ -2573,6 +2692,15 @@ export const ITEMS = [
     sizeW: 1,
     sizeH: 2,
     iconFile: 'Icon_Rags.png-f49e112ff480c796d614771eaeabad42.s3tc.ctex'
+  },
+  {
+    category: 'Misc',
+    id: 'Screws',
+    displayName: 'Screws',
+    resourcePath: 'res://Items/Misc/Screws/Screws.tres',
+    sizeW: 2,
+    sizeH: 1,
+    iconFile: 'Icon_Screws.png-cd751ec153c360d01c86c9aad9fb68ec.s3tc.ctex'
   },
   {
     category: 'Misc',
